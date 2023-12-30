@@ -1,0 +1,151 @@
+:root {
+  --main-color: #9356dc;
+  --second-color: #ff79da;
+  --third-color: #99e2d0;
+}
+
+@import "../SASS/exclude_me/buttons.scss";
+@import "../SASS/exclude_me/restaurants.scss";
+@import "../SASS/exclude_me/loader.scss";
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #353535;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+.section-title {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  font-size: 28;
+  font-weight: 900;
+  color: black;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+/* location */
+.location {
+  width: 100%;
+  font-weight: 600;
+  box-sizing: border-box;
+  box-shadow: inset 0em 0.1em 5px grey;
+  background-color: #eaeaea;
+  margin-bottom: 0px;
+  i {
+    padding-right: 15px;
+  }
+}
+/* cta */
+.cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 0px;
+  justify-content: center;
+  margin: 0px;
+  background-color: #f6f6f6;
+
+  p {
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 7px;
+    font-size: 18px;
+  }
+
+  h2 {
+    padding-left: 70px;
+    margin-bottom: 7px;
+    color: black;
+    font-weight: bold;
+    padding-right: 70px;
+    text-align: center;
+  }
+}
+
+/* fonctionnement */
+.fonctionnement {
+  padding-bottom: 45px;
+}
+.content-fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
+
+.logo-footer {
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+footer {
+  background-color: #353535;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 10px;
+  a {
+    color: white;
+    padding-bottom: 10px;
+  }
+}

@@ -54,7 +54,7 @@ body {
 }
 
 .section-title {
-  padding-left: 0px;
+  padding-left: 20px;
   padding-top: 25px;
   padding-bottom: 26px;
   font-size: 28;
@@ -136,8 +136,6 @@ header {
 }
 /* fonctionnement */
 .fonctionnement {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 45px;
 }
 .content-fonctionnement {
@@ -148,17 +146,39 @@ header {
 .button2 {
   display: flex;
   background-color: #f6f6f6;
-  font-size: 16;
+  align-items: center;
+  width: 90%;
+  font-size: 16px;
   font-weight: bold;
   justify-content: center;
   margin-bottom: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 5%;
+  margin-left: 5%;
   padding-top: 30px;
   padding-bottom: 25px;
   border-radius: 20px;
   border: none;
   box-shadow: 1px 5px 10px lightgray;
+  position: relative;
+  counter-increment: button;
+}
+
+.button2::before {
+  content: counter(button);
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 5%;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  border-radius: 50%;
 }
 
 .button2 i {
