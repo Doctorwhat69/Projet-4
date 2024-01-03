@@ -36,13 +36,38 @@
   justify-content: space-between;
   padding-top: 20px;
   min-height: 85px;
+}
 
-  i {
-    padding-right: 20px;
-    padding-top: 10px;
-    font-size: 30;
-    font-weight: 100;
-  }
+.heart {
+  position: relative;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+
+.F1,
+.F2 {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.F1 {
+  color: black;
+  z-index: 1;
+}
+
+.F2 {
+  color: black;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1s;
+}
+
+.heart:hover .F2 {
+  opacity: 1;
+  transition: all 1s;
 }
 
 .card-text {

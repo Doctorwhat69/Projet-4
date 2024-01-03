@@ -21,8 +21,8 @@ $bc-button1: linear-gradient(#ff79da, #9356dc);
     &::after {
       content: "";
       opacity: 1;
-      filter: brightness(100%);
       box-shadow: 4px 10px 10px gray;
+      transition: opacity 1s, box-shadow 1s;
     }
   }
 
@@ -30,14 +30,14 @@ $bc-button1: linear-gradient(#ff79da, #9356dc);
     content: "";
     position: absolute;
     top: 0;
-    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     border-radius: 30px;
     opacity: 0;
+    box-shadow: 4px 10px 10px lightgray;
     z-index: -1;
-    transition: opacity 1s;
+    transition: opacity 1s, box-shadow 1s;
   }
 }
 
@@ -93,6 +93,7 @@ $bc-button2: #f6f6f6;
       opacity: 1;
       filter: brightness(120%);
       box-shadow: 1px 5px 10px gray;
+      transition: all 1s;
     }
   }
 
@@ -108,6 +109,6 @@ $bc-button2: #f6f6f6;
     border-radius: 20px;
     opacity: 0;
     z-index: -1;
-    transition: opacity 1s;
+    transition: all 1s;
   }
 }
