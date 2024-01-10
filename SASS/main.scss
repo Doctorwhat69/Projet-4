@@ -7,6 +7,8 @@
 @import "../SASS/exclude_me/buttons.scss";
 @import "../SASS/exclude_me/restaurants.scss";
 @import "../SASS/exclude_me/MediaQuerries.scss";
+@import "../SASS/exclude_me/menu-restaurants.scss";
+@import "../SASS/exclude_me/loader.scss";
 
 img {
   width: 100%;
@@ -149,13 +151,16 @@ footer {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   /* header */
-
+  .content {
+    max-width: 100%;
+  }
   .section-title {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 0px;
+    max-width: 100%;
   }
 
   .logo {
@@ -189,18 +194,21 @@ footer {
     margin-right: auto;
     justify-content: center;
     width: 1100px;
+    max-width: 100%;
   }
   .content-fonctionnement {
     flex-direction: row;
     padding: 0;
     gap: 50px;
-    justify-content: center;
+    justify-content: left;
+    max-width: 100%;
+    margin-left: 1%;
   }
 
   .button2 {
     width: fit-content;
-    padding-left: 30px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 70px;
     margin: 0px;
   }
 
@@ -213,6 +221,7 @@ footer {
     padding-top: 0px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 
     .section-title {
       width: 1100px;

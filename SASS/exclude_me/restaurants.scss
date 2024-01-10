@@ -15,6 +15,7 @@
   width: 100%;
   border-radius: 15px;
   margin-bottom: 18px;
+  position: relative;
 
   a {
     display: flex;
@@ -28,6 +29,26 @@
     height: 180px;
     border-radius: 15px 15px 0px 0px;
   }
+}
+
+.image-new::after {
+  content: "Nouveau";
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #008766;
+  background-color: #99e2d0;
+  border-radius: 2px;
+  opacity: 1;
+  z-index: 1;
+  width: 80px;
+  height: 29px;
+  top: 5%;
+  right: 5%;
 }
 
 .card-content {
@@ -54,12 +75,12 @@
 }
 
 .F1 {
-  color: black;
+  color: linear-gradient(20deg, #ff79da, #9356dc);
   z-index: 1;
 }
 
 .F2 {
-  color: black;
+  color: linear-gradient(20deg, #ff79da, #9356dc);
   opacity: 0;
   z-index: 0;
   transition: opacity 1s;
