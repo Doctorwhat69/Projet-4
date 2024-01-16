@@ -6,7 +6,6 @@ body {
 }
 
 header {
-  text-align: left;
   flex-direction: row;
 }
 .header-menu {
@@ -14,18 +13,26 @@ header {
   max-width: 100%;
   flex-direction: row;
   align-items: center;
-}
-
-.logo {
-  max-width: 100%;
+  .fa-arrow-left {
+    color: #353535;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .logo-header2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .menu-title-container {
   display: flex;
   flex-direction: row;
   margin-right: 20px;
-  align-items: center;
   justify-content: space-between;
+  .heart {
+    margin: 0px;
+  }
   .fa-heart {
     font-size: 25px;
   }
@@ -94,7 +101,9 @@ header {
     animation-fill-mode: forwards;
 
     &::after {
-      content: url(/Assets/images/logo/circle-check-solid.svg);
+      font-family: "Font Awesome 5 Free";
+      content: "\f058";
+      font-size: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -102,7 +111,7 @@ header {
       background-color: #99e2d0;
       opacity: 1;
       transform: scaleX(1);
-      left: 80%;
+      left: 85%;
       top: 0;
       right: 0;
       bottom: 0;
@@ -115,7 +124,7 @@ header {
     opacity: 0;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
-    left: 80%;
+    left: 0;
     top: 0;
     right: 0;
     bottom: 0;
@@ -188,13 +197,16 @@ header {
     padding-right: 0;
   }
   100% {
-    padding-right: 20%;
+    padding-right: 15%;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1124px) {
   .header-menu {
     width: 100%;
+
+    .logo {
+    }
   }
 
   .image-restaurant {
@@ -207,9 +219,9 @@ header {
   }
 
   .menu {
-    max-width: none;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     top: -30px;
 
     .menu-title-container {
@@ -217,10 +229,32 @@ header {
       gap: 20px;
     }
 
+    .title-h3-menu {
+      display: flex;
+      width: min-content;
+      justify-content: center;
+      &::after {
+        border-bottom: 3px solid #99e2d0;
+        max-width: 40px;
+        top: 120%;
+        left: 0;
+        right: 0;
+        bottom: 0%;
+      }
+    }
+
     .menu-card {
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
     }
+  }
+  .entrée,
+  .plats,
+  .dessert {
+    padding: 0px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

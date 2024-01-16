@@ -29,6 +29,9 @@
     height: 180px;
     border-radius: 15px 15px 0px 0px;
   }
+  .heart {
+    margin-bottom: 45px;
+  }
 }
 
 .image-new::after {
@@ -58,11 +61,12 @@
   padding-top: 20px;
   min-height: 85px;
 }
-
+/* coeurs */
 .heart {
   position: relative;
   box-sizing: border-box;
   padding-right: 50px;
+  margin-top: 50px;
 }
 
 .F1,
@@ -75,20 +79,22 @@
 }
 
 .F1 {
-  color: linear-gradient(20deg, #ff79da, #9356dc);
+  color: black;
   z-index: 1;
 }
 
 .F2 {
-  color: linear-gradient(20deg, #ff79da, #9356dc);
+  color: transparent;
+  background: linear-gradient(20deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: 2;
   opacity: 0;
-  z-index: 0;
   transition: opacity 1s;
 }
 
 .heart:hover .F2 {
   opacity: 1;
-  transition: all 1s;
 }
 
 .card-text {
