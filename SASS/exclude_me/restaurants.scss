@@ -3,9 +3,11 @@
   background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 23px;
-  padding-left: 17px;
-  padding-right: 18px;
   padding-bottom: 60px;
+  .resto {
+    padding-left: 17px;
+    padding-right: 18px;
+  }
 }
 
 .card-restaurant {
@@ -86,7 +88,6 @@
 .F2 {
   color: transparent;
   background: linear-gradient(20deg, #ff79da, #9356dc);
-  -webkit-background-clip: text;
   background-clip: text;
   z-index: 2;
   opacity: 0;

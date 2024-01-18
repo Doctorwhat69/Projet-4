@@ -113,9 +113,11 @@
   background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 23px;
+  padding-bottom: 60px;
+}
+.restaurants .resto {
   padding-left: 17px;
   padding-right: 18px;
-  padding-bottom: 60px;
 }
 
 .card-restaurant {
@@ -196,7 +198,7 @@
   color: transparent;
   background: linear-gradient(20deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   z-index: 2;
   opacity: 0;
   transition: opacity 1s;
@@ -252,11 +254,23 @@ header {
   margin-right: auto;
 }
 
+.image-restaurant {
+  max-height: 250px;
+}
+.image-restaurant img {
+  z-index: -1;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .menu-title-container {
   display: flex;
   flex-direction: row;
   margin-right: 20px;
   justify-content: space-between;
+  white-space: nowrap;
+  gap: 15px;
 }
 .menu-title-container .heart {
   margin: 0px;
@@ -272,7 +286,7 @@ header {
 .menu {
   max-width: 100%;
   border-radius: 50px;
-  border: none;
+  background-color: #f6f6f6;
   padding: 20px;
   position: relative;
   top: -50px;
@@ -339,7 +353,7 @@ header {
   background-color: #99e2d0;
   opacity: 1;
   transform: scaleX(1);
-  left: 85%;
+  left: 80%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -350,10 +364,11 @@ header {
   background-color: #99e2d0;
   opacity: 0;
   transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
-  left: 0;
+  transition: all 0.5s ease-in-out;
+  margin-left: 10px;
+  left: 80%;
   top: 0;
-  right: 0;
+  right: 0%;
   bottom: 0;
   transform-origin: 100% 0%;
 }
@@ -428,9 +443,12 @@ header {
   .image-restaurant {
     width: 100%;
     max-height: 500px;
+    z-index: 0;
   }
   .image-restaurant img {
     max-height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .menu {
     max-width: 900px;
