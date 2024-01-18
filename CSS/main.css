@@ -285,11 +285,11 @@ header {
 
 .menu {
   max-width: 100%;
-  border-radius: 50px;
+  border-radius: 50px 50px 0px 0px;
+  padding-bottom: 500px;
   background-color: #f6f6f6;
   padding: 20px;
   position: relative;
-  top: -50px;
 }
 .menu .button1 {
   margin-left: auto;
@@ -301,6 +301,7 @@ header {
 }
 
 .title-h3-menu {
+  margin-top: 50px;
   z-index: 0;
   font-weight: 500;
   text-transform: uppercase;
@@ -309,6 +310,7 @@ header {
 .title-h3-menu::after {
   content: "";
   position: absolute;
+  max-width: 50px;
   border-bottom: 4px solid #99e2d0;
   top: 120%;
   left: 0;
@@ -436,6 +438,7 @@ header {
     padding-right: 15%;
   }
 }
+/* Media querry */
 @media (min-width: 1124px) {
   .header-menu {
     width: 100%;
@@ -663,6 +666,7 @@ header {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
+  margin-top: 0px;
 }
 
 footer {
