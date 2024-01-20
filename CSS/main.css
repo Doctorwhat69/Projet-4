@@ -242,6 +242,7 @@ header {
   max-width: 100%;
   flex-direction: row;
   align-items: center;
+  padding-left: 0px;
 }
 .header-menu .fa-arrow-left {
   color: #353535;
@@ -252,6 +253,7 @@ header {
 .header-menu .logo-header2 {
   margin-left: auto;
   margin-right: auto;
+  transform: translateX(-5%);
 }
 
 .image-restaurant {
@@ -286,7 +288,7 @@ header {
 .menu {
   max-width: 100%;
   border-radius: 50px 50px 0px 0px;
-  padding-bottom: 500px;
+  padding-bottom: 50px;
   background-color: #f6f6f6;
   padding: 20px;
   position: relative;
@@ -489,6 +491,9 @@ header {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .menu-card::after {
+    margin-left: 20px;
   }
 }
 /* loader */
