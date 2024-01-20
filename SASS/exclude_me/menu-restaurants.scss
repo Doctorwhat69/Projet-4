@@ -139,7 +139,6 @@ header {
     opacity: 0;
     transform: scaleX(0);
     transition: all 0.5s ease-in-out;
-    margin-left: 10px;
     left: 85%;
     top: 0;
     right: 0%;
@@ -214,6 +213,14 @@ header {
     padding-right: 15%;
   }
 }
+@keyframes moveleftdesktop {
+  0% {
+    padding-right: 0;
+  }
+  100% {
+    padding-right: 10%;
+  }
+}
 /* Media querry */
 @media (min-width: 1124px) {
   .header-menu {
@@ -274,7 +281,13 @@ header {
     margin-right: auto;
   }
 
-  .menu-card::after {
-    margin-left: 20px;
+  .menu-card {
+    &::after {
+      margin-left: 20px;
+    }
+    &:hover {
+      animation: moveleftdesktop 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
   }
 }
